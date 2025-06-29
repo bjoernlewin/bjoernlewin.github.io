@@ -41,11 +41,11 @@
       margin: 1em 0 2em;
     }
 
-    .audio-section {
-      margin-top: 2.5rem;
+    .track {
       display: flex;
-      align-items: flex-start;
       gap: 1.5rem;
+      align-items: flex-start;
+      margin-top: 2.5rem;
       flex-wrap: wrap;
     }
 
@@ -61,28 +61,19 @@
       color: #777;
     }
 
-    .track {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.5rem;
-      margin-top: 2.5rem;
-      flex-wrap: wrap;
-    }
-
     .track-info {
       flex: 1;
+      min-width: 200px;
     }
 
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9em;
-      color: #999;
-      text-align: center;
+    .track-info h3 {
+      margin-top: 0;
+      margin-bottom: 0.3em;
     }
 
-    a {
-      color: #ff8c42;
-      text-decoration: none;
+    audio {
+      width: 100%;
+      margin-top: 1em;
     }
 
     @media (max-width: 600px) {
@@ -99,7 +90,7 @@
 <body>
   <div class="container">
     <p style="text-align: right; margin-top: 0; margin-bottom: 1rem;">
-      <a href="index.html">🇩🇪 Deutsche Version</a>
+      <a href="index.html" style="color: #ff8c42; text-decoration: none;">🇩🇪 Deutsche Version</a>
     </p>
 
     <h1>Björn Lewin</h1>
@@ -126,8 +117,8 @@
     <div class="track">
       <img src="media/placeholder.webp" alt="Cover Ae Fond Kiss" class="cover" />
       <div class="track-info">
-        <h3>Ae Fond Kiss</h3>
-        <p><strong>Rainpark feat. <a href="https://laurasaleh.de/" target="_blank">Laura Saleh</a></strong> (2012)<br>
+        <h3><!-- Song title -->Ae Fond Kiss</h3>
+        <p><strong>Rainpark feat. <a href="https://laurasaleh.de/" target="_blank" style="color: #ff8c42;">Laura Saleh</a></strong> (2012)<br>
         Live recording · Recording & Mix</p>
         <audio controls>
           <source src="media/ae-fond-kiss.mp3" type="audio/mpeg" />
@@ -140,11 +131,10 @@
     <div class="track">
       <img src="media/rfc-hymne.jpeg" alt="Cover RFC Anthem" class="cover" />
       <div class="track-info">
-        <h3>RFC Rostock – Official Anthem</h3>
-        <p><strong>Foolproof Partyband</strong> (2025)<br>
+        <h3><!-- Song title -->RFC Rostock – Official Anthem</h3>
+        <p><strong><a href="https://foolproofband.de/" target="_blank" style="color: #ff8c42;">Foolproof Partyband</a></strong> (2025)<br>
         Co-Songwriting, arrangement, co-production with 
-        <a href="https://tonstudio-rostock.de/team/leo/" target="_blank">Leo Sieg</a> (Recording & Mixing) and 
-        <a href="https://foolproofband.de/" target="_blank">Foolproof Partyband</a></p>
+        <a href="https://tonstudio-rostock.de/team/leo/" target="_blank" style="color: #ff8c42;">Leo Sieg</a> (Recording & Mixing) and Foolproof Partyband</p>
         <audio controls>
           <source src="media/rfc-hymne.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
@@ -156,7 +146,7 @@
     <div class="track">
       <div class="cover">🎵</div>
       <div class="track-info">
-        <h3>Sommer, Sonne, Sand & Meer</h3>
+        <h3><!-- Song title -->Sommer, Sonne, Sand & Meer</h3>
         <p><strong>Langermann</strong> (2011)<br>
         Pre-production, musical details & arrangement development.  
         Co-production with Peter Grützmann (Arrangement, Recording, Mixing)</p>
@@ -171,7 +161,7 @@
     <div class="track">
       <div class="cover">🎵</div>
       <div class="track-info">
-        <h3>These Wounds are hard to Cure (backing track)</h3>
+        <h3><!-- Song title -->These Wounds are hard to Cure (backing track)</h3>
         <p><strong>Rainpark</strong> (2019)<br>
         Pre-production & arrangement</p>
         <audio controls>
@@ -181,8 +171,8 @@
       </div>
     </div>
 
-    <footer>
-      Photo: <a href="https://www.tonstudio2.de" target="_blank">Thomas Fink · Studio 2, Schwerin</a>
+    <footer style="margin-top: 3rem; font-size: 0.9em; color: #999; text-align: center;">
+      Photo: <a href="https://www.tonstudio2.de" target="_blank" style="color: #ff8c42;">Thomas Fink · Studio 2, Schwerin</a>
     </footer>
   </div>
 </body>
