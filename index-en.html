@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bjoern Lewin – Musician & Producer</title>
+  <title>Björn Lewin – Musician & Producer</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Trebuchet MS', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       background-color: #1e1e1e;
       color: #f0f0f0;
       line-height: 1.6;
@@ -32,21 +32,16 @@
       margin-bottom: 1.5em;
     }
 
-    blockquote {
+    .slogan {
+      font-variant: small-caps;
+      color: #ff8c42;
+      font-size: 1.2em;
       border-left: 3px solid #ff8c42;
       padding-left: 1em;
-      color: #ff8c42;
-      font-variant: small-caps;
-      font-size: 1.2em;
-      font-style: normal;
       margin: 1em 0 2em;
     }
 
-    p {
-      margin: 1em 0;
-    }
-
-    .track {
+    .audio-section {
       margin-top: 2.5rem;
       display: flex;
       align-items: flex-start;
@@ -54,42 +49,49 @@
       flex-wrap: wrap;
     }
 
-    .track img,
-    .track .placeholder {
-      width: auto;
-      height: 6.2em;
-      flex-shrink: 0;
+    .cover {
+      width: 6em;
+      height: 6em;
       background-color: #333;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #999;
-      font-size: 1.2em;
+      flex-shrink: 0;
+      font-size: 1.5em;
+      color: #777;
     }
 
-    .track div {
+    .track {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .track-info {
       flex: 1;
-      min-width: 250px;
     }
 
-    .artist {
-      font-weight: bold;
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9em;
+      color: #999;
+      text-align: center;
+    }
+
+    a {
+      color: #ff8c42;
+      text-decoration: none;
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-
       .track {
         flex-direction: column;
-        align-items: flex-start;
       }
 
-      .track img,
-      .track .placeholder {
-        width: 100%;
-        height: auto;
+      body {
+        padding: 1rem;
       }
     }
   </style>
@@ -97,98 +99,90 @@
 <body>
   <div class="container">
     <p style="text-align: right; margin-top: 0; margin-bottom: 1rem;">
-      <a href="index.html" style="color: #ff8c42; text-decoration: none;">🇩🇪 Deutsche Version</a>
+      <a href="index.html">🇩🇪 Deutsche Version</a>
     </p>
 
-    <h1>Bjoern Lewin</h1>
+    <h1>Björn Lewin</h1>
     <div class="subtitle">Musician, Song Architect, Creative Producer</div>
     <img src="media/portrait01.webp" alt="Björn Lewin" style="width: 100%; max-width: 300px; border-radius: 6px; margin-bottom: 1.5rem;" />
 
-    <blockquote>Music with people – for people.</blockquote>
+    <blockquote class="slogan">Music with people – for people.</blockquote>
 
-    <p>Music never lies.<br>
+    <p>Music doesn't lie.<br>
     A song often knows where it wants to go.<br>
-    And sometimes, it helps when someone joins the journey and understands what it needs.<br>
-    Because music is created together. It needs people who really listen – beyond just the notes.</p>
+    And sometimes it helps to have someone listening – someone who understands what the song needs.<br>
+    Because music is made together. It needs people who truly listen – even beyond the notes.</p>
 
-    <p>If something inside you wants to be heard,<br>
-    we'll figure out how it can sound.<br>
-    Until the song ends up where it belongs – not just well meant, but well made –<br>
-    and you know: Yes. That’s it.</p>
+    <p>If something in you wants to be heard,<br>
+    we'll explore together what it might sound like.<br>
+    Until the song is where it's meant to be – not just well intended, but well made –<br>
+    and you feel: Yes. That's it.</p>
 
     <hr style="margin-top: 4rem; margin-bottom: 2rem; border: none; border-top: 1px solid #444;" />
 
-    <h2 style="margin-bottom: 0.5rem;">Music Samples</h2>
+    <h2 style="margin-bottom: 0.5rem;">Selected Work</h2>
 
     <!-- Ae Fond Kiss -->
-    <section class="track">
-      <div class="placeholder">🎵</div>
-      <div>
-        <h3 style="font-size: 1.1em; color: #f0f0f0; margin-bottom: 0.2em;">Ae Fond Kiss</h3>
-        <p style="color: #ccc; margin-top: 0;">
-          <span class="artist">Rainpark feat. Laura Saleh</span> (2012)<br />
-          Live recording · Recording & Mix · <a href="https://laurasaleh.de/" target="_blank" style="color: #ff8c42; text-decoration: none;">laurasaleh.de</a>
-        </p>
-        <audio controls style="width: 100%; margin-top: 1em;">
+    <div class="track">
+      <img src="media/placeholder.webp" alt="Cover Ae Fond Kiss" class="cover" />
+      <div class="track-info">
+        <h3>Ae Fond Kiss</h3>
+        <p><strong>Rainpark feat. <a href="https://laurasaleh.de/" target="_blank">Laura Saleh</a></strong> (2012)<br>
+        Live recording · Recording & Mix</p>
+        <audio controls>
           <source src="media/ae-fond-kiss.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
-    </section>
+    </div>
 
-    <!-- RFC Anthem -->
-    <section class="track">
-      <img src="media/rfc-hymne.webp" alt="Cover RFC Anthem" />
-      <div>
-        <h3 style="font-size: 1.1em; color: #f0f0f0; margin-bottom: 0.2em;">RFC Rostock – Official Anthem</h3>
-        <p style="color: #ccc; margin-top: 0;">
-          <span class="artist">Foolproof Partyband</span> (2024)<br />
-          Co-writing, arrangement, co-production with 
-          <a href="https://tonstudio-rostock.de/team/leo/" target="_blank" style="color: #ff8c42; text-decoration: none;">Leo Sieg</a> (recording & mixing) and 
-          <a href="https://foolproofband.de/" target="_blank" style="color: #ff8c42; text-decoration: none;">Foolproof Partyband</a>
-        </p>
-        <audio controls style="width: 100%; margin-top: 1em;">
+    <!-- RFC Hymne -->
+    <div class="track">
+      <img src="media/rfc-hymne.jpeg" alt="Cover RFC Anthem" class="cover" />
+      <div class="track-info">
+        <h3>RFC Rostock – Official Anthem</h3>
+        <p><strong>Foolproof Partyband</strong> (2025)<br>
+        Co-Songwriting, arrangement, co-production with 
+        <a href="https://tonstudio-rostock.de/team/leo/" target="_blank">Leo Sieg</a> (Recording & Mixing) and 
+        <a href="https://foolproofband.de/" target="_blank">Foolproof Partyband</a></p>
+        <audio controls>
           <source src="media/rfc-hymne.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
-    </section>
+    </div>
 
-    <!-- Sommer -->
-    <section class="track">
-      <div class="placeholder">🎵</div>
-      <div>
-        <h3 style="font-size: 1.1em; color: #f0f0f0; margin-bottom: 0.2em;">Sommer, Sonne, Sand & Meer</h3>
-        <p style="color: #ccc; margin-top: 0;">
-          <span class="artist">Langermann</span> (2011)<br />
-          Pre-production, musical details & arrangement focus. Co-production with Peter Grützmann (arrangement, recording, mixing)
-        </p>
-        <audio controls style="width: 100%; margin-top: 1em;">
+    <!-- Sommer, Sonne, Sand & Meer -->
+    <div class="track">
+      <div class="cover">🎵</div>
+      <div class="track-info">
+        <h3>Sommer, Sonne, Sand & Meer</h3>
+        <p><strong>Langermann</strong> (2011)<br>
+        Pre-production, musical details & arrangement development.  
+        Co-production with Peter Grützmann (Arrangement, Recording, Mixing)</p>
+        <audio controls>
           <source src="media/sommer.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
-    </section>
+    </div>
 
     <!-- These Wounds -->
-    <section class="track">
-      <div class="placeholder">🎵</div>
-      <div>
-        <h3 style="font-size: 1.1em; color: #f0f0f0; margin-bottom: 0.2em;">These Wounds are hard to Cure (backing track)</h3>
-        <p style="color: #ccc; margin-top: 0;">
-          <span class="artist">Rainpark</span> (2019)<br />
-          Pre-production & arrangement
-        </p>
-        <audio controls style="width: 100%; margin-top: 1em;">
+    <div class="track">
+      <div class="cover">🎵</div>
+      <div class="track-info">
+        <h3>These Wounds are hard to Cure (backing track)</h3>
+        <p><strong>Rainpark</strong> (2019)<br>
+        Pre-production & arrangement</p>
+        <audio controls>
           <source src="media/these-wounds.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
-    </section>
+    </div>
 
-    <footer style="margin-top: 3rem; font-size: 0.9em; color: #999; text-align: center;">
-      Photo: <a href="https://www.tonstudio2.de" target="_blank" style="color: #ff8c42; text-decoration: none;">
-      Thomas Fink · Studio 2, Schwerin</a>
+    <footer>
+      Photo: <a href="https://www.tonstudio2.de" target="_blank">Thomas Fink · Studio 2, Schwerin</a>
     </footer>
   </div>
 </body>
