@@ -43,15 +43,15 @@
 
     .track {
       display: flex;
-      gap: 1.5rem;
       align-items: flex-start;
+      gap: 1.5rem;
       margin-top: 2.5rem;
       flex-wrap: wrap;
     }
 
     .cover {
-      width: 6em;
-      height: 6em;
+      width: 5em;
+      height: 5em;
       background-color: #333;
       display: flex;
       align-items: center;
@@ -59,16 +59,11 @@
       flex-shrink: 0;
       font-size: 1.5em;
       color: #777;
+      object-fit: cover;
     }
 
     .track-info {
       flex: 1;
-      min-width: 200px;
-    }
-
-    .track-info h3 {
-      margin-top: 0;
-      margin-bottom: 0.3em;
     }
 
     audio {
@@ -115,9 +110,9 @@
 
     <!-- Ae Fond Kiss -->
     <div class="track">
-      <img src="media/placeholder.webp" alt="Cover Ae Fond Kiss" class="cover" />
+      <div class="cover">🎵</div>
       <div class="track-info">
-        <h3><!-- Song title -->Ae Fond Kiss</h3>
+        <h3 style="margin-top: 0;">Ae Fond Kiss</h3>
         <p><strong>Rainpark feat. <a href="https://laurasaleh.de/" target="_blank" style="color: #ff8c42;">Laura Saleh</a></strong> (2012)<br>
         Live recording · Recording & Mix</p>
         <audio controls>
@@ -131,10 +126,11 @@
     <div class="track">
       <img src="media/rfc-hymne.jpeg" alt="Cover RFC Anthem" class="cover" />
       <div class="track-info">
-        <h3><!-- Song title -->RFC Rostock – Official Anthem</h3>
-        <p><strong><a href="https://foolproofband.de/" target="_blank" style="color: #ff8c42;">Foolproof Partyband</a></strong> (2025)<br>
+        <h3 style="margin-top: 0;">RFC Rostock – Official Anthem</h3>
+        <p><strong>Foolproof Partyband</strong> (2025)<br>
         Co-Songwriting, arrangement, co-production with 
-        <a href="https://tonstudio-rostock.de/team/leo/" target="_blank" style="color: #ff8c42;">Leo Sieg</a> (Recording & Mixing) and Foolproof Partyband</p>
+        <a href="https://tonstudio-rostock.de/team/leo/" target="_blank" style="color: #ff8c42;">Leo Sieg</a> (Recording & Mixing) and 
+        <a href="https://foolproofband.de/" target="_blank" style="color: #ff8c42;">Foolproof Partyband</a></p>
         <audio controls>
           <source src="media/rfc-hymne.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
@@ -146,7 +142,7 @@
     <div class="track">
       <div class="cover">🎵</div>
       <div class="track-info">
-        <h3><!-- Song title -->Sommer, Sonne, Sand & Meer</h3>
+        <h3 style="margin-top: 0;">Sommer, Sonne, Sand & Meer</h3>
         <p><strong>Langermann</strong> (2011)<br>
         Pre-production, musical details & arrangement development.  
         Co-production with Peter Grützmann (Arrangement, Recording, Mixing)</p>
@@ -161,7 +157,7 @@
     <div class="track">
       <div class="cover">🎵</div>
       <div class="track-info">
-        <h3><!-- Song title -->These Wounds are hard to Cure (backing track)</h3>
+        <h3 style="margin-top: 0;">These Wounds are hard to Cure (backing track)</h3>
         <p><strong>Rainpark</strong> (2019)<br>
         Pre-production & arrangement</p>
         <audio controls>
@@ -172,7 +168,8 @@
     </div>
 
     <footer style="margin-top: 3rem; font-size: 0.9em; color: #999; text-align: center;">
-      Photo: <a href="https://www.tonstudio2.de" target="_blank" style="color: #ff8c42;">Thomas Fink · Studio 2, Schwerin</a>
+      Photo: <a href="https://www.tonstudio2.de" target="_blank" style="color: #ff8c42; text-decoration: none;">
+      Thomas Fink · Studio 2, Schwerin</a>
     </footer>
   </div>
 </body>
